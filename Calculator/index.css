@@ -1,5 +1,13 @@
 :root{
     --specialFont: "Big Shoulders Stencil Display";
+
+    --specialBorder: 1px solid black;
+
+    --bigFontSize: 50px;
+    --normalFontsize: 30px;
+
+    --screenAndbuttonColor: #98fb98;
+    
 }
 
 body{
@@ -23,8 +31,8 @@ body{
     display: flex;
     justify-content: center;
     
-
-    background-color: 	#606060;
+    background-color:#252b33;
+    
 
     border: 4px solid black;
 
@@ -34,9 +42,10 @@ body{
 
 #calculatorScreen{
 
-    background-color: black;
-    opacity: 80%;
+    background-color: #505755;
 
+    border: 2px solid black;
+   
     height: 100px;
     width: 400px;
 
@@ -47,13 +56,16 @@ body{
 
 #calculator{
     
-    background-color: #98fb98;;
+    background-color: var(--screenAndbuttonColor);
+    opacity: 100%;
 
     height: 50px;
     width: 300px;
 
     margin-left: 45px;
     margin-top: 20px;
+
+    border: 2px solid black;
     
 }
 
@@ -66,18 +78,17 @@ body{
     position: absolute;
     margin-top: 200px;
     
-
     display: flex;
     justify-content: center;
 
-    border: 3px solid black;
+    border: var(--specialBorder);
     
 }
 
 
 #calculatorButtons{
 
-    background-color: #A9A9A9;
+    background-color: #525756;
 
     padding-left: 10px;
     padding-right: 10px;
@@ -116,12 +127,15 @@ body{
     height: 50px;
     width: 70px;
    
-    font-size: 30px;
+    font-size: var(--normalFontsize);
     font-family: var(--specialFont);
     font-weight: bold;
 
-     
- 
+    border: var(--specialBorder);
+
+    background-color: #BEBEBE;
+
+
 }
 
 
@@ -129,27 +143,31 @@ body{
     
     height: 60px;
     
-    font-size: 40px;
+    font-size: var(--normalFontsize);
     font-family: --specialFont;
     font-weight: bold;
-
+    border: var(--specialBorder);
     
- 
     flex-basis: 33.333333%;
+
+    background-color: #BEBEBE;
 }
+
 
 .buttonZero{
     
     height: 60px;
     width: 130px;
 
-   
-
-    font-size: 40px;
+    font-size: var(--normalFontsize);
     font-family: --specialFont;
     font-weight: bold;
+
+    border: var(--specialBorder);
     
     margin-left: 125px;
+
+    background-color: #BEBEBE;
     
 }
 
@@ -163,18 +181,34 @@ body{
 
 #submit{
 
-
     width: 200px;
     height: 70px;
 
     margin-left: 90px;
 
-    
-
-    font-size: 30px;
-    font-weight:bold;
+    font-size: var(--bigFontSize);
+    font-weight: bold;
     font-family: "Big Shoulders Stencil Display";
+
+    border: var(--specialBorder);
+
+    background-color: #BEBEBE;
+
+}
+
+
+button:hover{
+
+    background-color:var(--screenAndbuttonColor);
+
+    font-size: 40px;
     
- 
+}
+
+
+#submit:hover{
+
+    background-color:var(--screenAndbuttonColor);
+    font-size: 60px;
 
 }
