@@ -5,6 +5,7 @@
 
     --bigFontSize: 50px;
     --normalFontsize: 30px;
+    
 
     --screenAndbuttonColor: #98fb98;
     
@@ -34,7 +35,7 @@ body{
     background-color:#18191a;
     
 
-    border: 4px solid black;
+    border: 4px solid #505755;
     border-radius: 30px;
 
     
@@ -69,6 +70,9 @@ body{
 
     border: 2px solid black;
     border-radius: 10px;
+
+    font-size: var(--bigFontSize);
+    font-family: var(--specialFont);
     
 }
 
@@ -147,6 +151,11 @@ body{
 
 }
 
+#deleteButton{
+    background-color: red;
+    color: white;
+}
+
 
 .buttonBottom{
     
@@ -193,10 +202,10 @@ body{
 
 #submit{
 
-    width: 200px;
+    width: 170px;
     height: 70px;
 
-    margin-left: 90px;
+    margin-left: 105px;
 
     font-size: var(--bigFontSize);
     font-weight: bold;

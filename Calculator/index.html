@@ -18,7 +18,7 @@
             <form>
 
                 <label></label>
-                <input type="text" name="calculator" id="calculator">
+                <input type="text" name="calculator" id="calculator" disabled>
     
             </form>
         </div>
@@ -29,30 +29,31 @@
 
             <div id="upperButtons">
 
-                <button class="buttonUp" > +</button>
-                <button class="buttonUp" > -</button>
-                <button class="buttonUp" > x</button>
-                <button class="buttonUp" > ÷ </button>
+                <button class="buttonUp"  onclick="display('+')"> + </button>
+                <button class="buttonUp"  onclick="display('-')"> - </button>
+                <button class="buttonUp"  onclick="display('*')"> x </button>
+                <button class="buttonUp"  onclick="display('/')"> ÷ </button>
+                <button class="buttonUp"  id="deleteButton" onclick="deleteButton()" > C </button>
               
             </div>
         
 
             <div id="lowerButtons">
 
-            <button class="buttonBottom" > 1</button>
-            <button class="buttonBottom" > 2</button>
-            <button class="buttonBottom" > 3</button>
-            <button class="buttonBottom" > 4</button>
-            <button class="buttonBottom" > 5</button>
-            <button class="buttonBottom" > 6</button>
-            <button class="buttonBottom" > 7</button>
-            <button class="buttonBottom" > 8</button>
-            <button class="buttonBottom" > 9</button>
+            <button class="buttonBottom" value="1" onclick="display('1')" > 1</button>
+            <button class="buttonBottom" value="2" onclick="display('2')"> 2</button>
+            <button class="buttonBottom" value="3" onclick="display('3')"> 3</button>
+            <button class="buttonBottom" value="4" onclick="display('4')"> 4</button>
+            <button class="buttonBottom" value="5" onclick="display('5')"> 5</button>
+            <button class="buttonBottom" value="6" onclick="display('6')"> 6</button>
+            <button class="buttonBottom" value="7" onclick="display('7')"> 7</button>
+            <button class="buttonBottom" value="8" onclick="display('8')"> 8</button>
+            <button class="buttonBottom" value="9" onclick="display('9')"> 9</button>
             
-            <button class="buttonZero" >0</button>
+            <button class="buttonZero"  value="0" onclick="display('0')">0</button>
             </div>
             <div id="showResultContainer">
-                <input type="submit" value="=" id="submit">
+                <input type="submit" value="=" id="submit" onclick="solve()">
     
             
             </div>

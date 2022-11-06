@@ -1,7 +1,17 @@
-const submit = document.getElementById("submit")
+function display(buttonValue){
 
-submit.addEventListener("click", () =>{
+    document.getElementById("calculator").value+= buttonValue; 
+}
 
-    console.log("a reusit");
+function solve(){
 
-    })
+     let x = document.getElementById("calculator").value;
+    
+     document.getElementById("calculator").value = eval(x);
+}
+
+
+function deleteButton(){
+    document.getElementById("calculator").value = " ";
+}
+
